@@ -1,4 +1,5 @@
 require_relative "tile"
+require 'byebug'
 
 class Board
   attr_reader :grid
@@ -47,7 +48,7 @@ class Board
 
 
   def size
-    grid.size
+    grid
   end
 
   alias_method :rows, :size
